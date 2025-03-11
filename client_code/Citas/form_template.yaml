@@ -1,0 +1,15 @@
+components_by_slot:
+  content:
+  - layout_properties: {}
+    name: TitleLabel
+    properties: {bold: true, font_size: null, italic: false, role: title, text: Citas, underline: false}
+    type: Label
+  - data_bindings: []
+    layout_properties: {}
+    name: AppointmentListPanel
+    properties: {item_template: Citas.AppointmentList}
+    type: RepeatingPanel
+is_package: true
+layout:
+  form_event_bindings: {show: form_show}
+  type: form:Template

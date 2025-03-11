@@ -1,0 +1,15 @@
+components:
+- data_bindings:
+  - {code: 'self.item[''nombre'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UASMUZ,EFNPDM'}
+  name: lbl_name
+  properties: {}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''descripcion'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UASMUZ,SFEMHC'}
+  name: lbl_desc
+  properties: {}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true
