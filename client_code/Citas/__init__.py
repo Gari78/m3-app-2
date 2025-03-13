@@ -10,10 +10,21 @@ class Citas(CitasTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     data = [
-        {"nombre": "Item 1", "descripcion": "Descripción 1"},
-        {"nombre": "Item 2", "descripcion": "Descripción 2"},
-        {"nombre": "Item 3", "descripcion": "Descripción 3"},
+        {"nombre": "235769dkj", "descripcion": "Le dolía el alma", "tipo": "normal", "dinero": "7,4"},
+        {"nombre": "jdj532gds", "descripcion": "El bombero con dolor de abdominales", "tipo": "urgente", "dinero": "10"},
+        {"nombre": "jf84jdo20", "descripcion": "Zanahorio", "tipo": "privado", "dinero": "25"},
+        {"nombre": "8fdg73hds", "descripcion": "Gato filósofo", "tipo": "normal", "dinero": "7,4"},
+        {"nombre": "4jfk93kdl", "descripcion": "Un pez llamado Juan", "tipo": "privado", "dinero": "25"},
+        {"nombre": "0djh392fk", "descripcion": "La montaña de los sueños", "tipo": "urgente", "dinero": "10"},
+        {"nombre": "9gdh28sjk", "descripcion": "Mago sin varita", "tipo": "normal", "dinero": "7,4"},
+        {"nombre": "kl39dkf02", "descripcion": "Camino de caramelos", "tipo": "privado", "dinero": "25"},
+        {"nombre": "p2jfk38d9", "descripcion": "El hombre que hablaba con sombras", "tipo": "urgente", "dinero": "10"},
+        {"nombre": "z8fk392ld", "descripcion": "Biblioteca encantada", "tipo": "normal", "dinero": "7,4"},
+        {"nombre": "xj29fk30s", "descripcion": "Dragón dormilón", "tipo": "privado", "dinero": "25"},
+        {"nombre": "m3ldk49jf", "descripcion": "Pirata sin barco", "tipo": "urgente", "dinero": "10"},
+        {"nombre": "h4dk39sla", "descripcion": "Los zapatos del destino", "tipo": "normal", "dinero": "7,4"}
     ]
+
     self.AppointmentListPanel.items = data
 
     # Any code you write here will run before the form opens.
