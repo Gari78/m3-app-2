@@ -1,14 +1,23 @@
 components_by_slot:
   content:
-  - layout_properties: {}
-    name: TitleLabel
-    properties: {bold: true, font_size: null, italic: false, role: title, text: Citas, underline: false}
-    type: Label
-  - data_bindings: []
+  - components:
+    - layout_properties: {col_xs: 0, row: RICFCC, width_xs: 9}
+      name: TitleLabel
+      properties: {bold: true, font_size: null, italic: false, role: title, text: Citas, underline: false}
+      type: Label
+    - layout_properties: {col_xs: 2, row: RICFCC, width_xs: 3}
+      name: addAppointmentButton
+      properties: {role: outlined-button, text: outlined_button_1}
+      type: Button
+    - data_bindings: []
+      layout_properties: {col_xs: 0, row: VIGDCG, width_xs: 12}
+      name: AppointmentListPanel
+      properties: {item_template: Citas.AppointmentList}
+      type: RepeatingPanel
     layout_properties: {}
-    name: AppointmentListPanel
-    properties: {item_template: Citas.AppointmentList}
-    type: RepeatingPanel
+    name: grid_panel_1
+    properties: {}
+    type: GridPanel
 is_package: true
 layout:
   form_event_bindings: {show: form_show}

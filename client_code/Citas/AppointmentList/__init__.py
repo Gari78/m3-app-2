@@ -10,7 +10,7 @@ class AppointmentList(AppointmentListTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     if self.item:
-      self.lbl_name = self.item.get("nombre", "jeje")
-      self.lbl_desc = self.item.get("description", "miau")
+      self.lbl_name.text = self.item.get("nombre", "jeje")
+      self.lbl_desc.text = self.item.get("descripcion", "miau")
 
     # Any code you write here will run before the form opens.
