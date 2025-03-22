@@ -1,5 +1,6 @@
 from ._anvil_designer import CitasTemplate
 from anvil import *
+import anvil
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -34,4 +35,11 @@ class Citas(CitasTemplate):
     self.layout.reset_links()
     self.layout.appointmentsLink.role = 'selected'
     #response = await fetch("https://api.tuservicio.com/endpoint");
+
+  def addAppointmentButton_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    from ..createAppointment import createAppointment
+    popup = createAppointment()
+    open_form(popup)
+    
     
