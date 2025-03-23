@@ -17,6 +17,11 @@ components:
       name: image_2
       properties: {height: 31, source: _/theme/reloj.png}
       type: Image
+    - event_bindings: {tick: timer_1_tick}
+      layout_properties: {grid_position: 'BPSISI,PTCTTV LDTCVH,SCEFWT XHOPIZ,YKCZGZ'}
+      name: timer_1
+      properties: {}
+      type: Timer
     - layout_properties: {grid_position: 'BPSISI,PTCTTV LDTCVH,SCEFWT XHOPIZ,HFMSYJ'}
       name: appointment_timer
       properties: {icon: ''}
