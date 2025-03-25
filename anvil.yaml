@@ -1,10 +1,5 @@
 allow_embedding: false
-db_schema:
-  table_1:
-    client: none
-    columns: []
-    server: full
-    title: Table 1
+db_schema: {}
 dependencies: []
 name: M3 App 2
 native_deps: null
