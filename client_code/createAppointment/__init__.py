@@ -11,8 +11,8 @@ class createAppointment(createAppointmentTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    #types = self.getRequest()
-    #print(types)
+    types = self.getRequest()
+    print(types)
     self.type_dropdown.items = ["Normal", "Telemático", "Urgente", "Privado"]
     self.startTime = int(time.time())
 
@@ -43,5 +43,5 @@ class createAppointment(createAppointmentTemplate):
       "Authorization": f"Bearer {token}",
       "Content-Type": "application/json"
     }
-    #response = anvil.http.request("http://94.248.72.87:5000/api/v1/appointment_types/", method="GET", headers=headers, json=True)
-    #return response
+    response = anvil.http.request("http://localhost:5000/api/v1/appointment_types/", method="GET", headers=headers, json=True)
+    return response
